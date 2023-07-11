@@ -1,0 +1,42 @@
+<%= form_with url: stories_path, local: true, html: { multipart: true } do |form| %>
+
+  <div class="form-group">
+    <%= form.label :file, "Upload Flashcard Data" %>
+    <%= form.file_field :file, required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :format, "File Format" %>
+    <%= form.select :format, ['XML', 'Other format 1', 'Other format 2'], {}, { required: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :flashcard_type, "Flashcard App Type" %>
+    <%= form.select :flashcard_type, ['Pleco', 'Other App 1', 'Other App 2'], {}, { required: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :language, "Story Language" %>
+    <%= form.select :language, ['English', 'French', 'Spanish', 'Other'], {}, { required: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :level, "Language Proficiency Level" %>
+    <%= form.select :level, ['Beginner', 'Intermediate', 'Advanced'], {}, { required: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :story_length, "Story Length" %>
+    <%= form.number_field :story_length, in: 1..10000, step: 100, required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :topic, "Story Topic (Optional)" %>
+    <%= form.text_field :topic %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit "Generate Story" %>
+  </div>
+
+<% end %>
