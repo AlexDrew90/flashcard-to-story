@@ -7,21 +7,21 @@
 
   <div class="form-group">
     <%= form.label :format, "File Format" %>
-    <%= form.select :format, ['XML', 'Other format 1', 'Other format 2'], {}, { required: true } %>
+    <%= form.select :format, ['XML', 'txt', 'Other format'], {}, { required: true } %>
   </div>
 
   <div class="form-group">
     <%= form.label :flashcard_type, "Flashcard App Type" %>
-    <%= form.select :flashcard_type, ['Pleco', 'Other App 1', 'Other App 2'], {}, { required: true } %>
+    <%= form.select :flashcard_type, ['Pleco', 'Anki', 'Other App'], {}, { required: true } %>
   </div>
 
   <div class="form-group">
     <%= form.label :language, "Story Language" %>
-    <%= form.select :language, ['English', 'French', 'Spanish', 'Other'], {}, { required: true } %>
+    <%= form.select :language, ['English', 'French', 'Spanish', 'Mandarin'], {}, { required: true } %>
   </div>
 
   <div class="form-group">
-    <%= form.label :level, "Language Proficiency Level" %>
+    <%= form.label :level, "Your Language Proficiency Level" %>
     <%= form.select :level, ['Beginner', 'Intermediate', 'Advanced'], {}, { required: true } %>
   </div>
 
@@ -31,7 +31,7 @@
   </div>
 
   <div class="form-group">
-    <%= form.label :topic, "Story Topic (Optional)" %>
+    <%= form.label :topic, "Choose a topic for your story" %>
     <%= form.text_field :topic %>
   </div>
 
