@@ -1,4 +1,6 @@
 class StoriesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:new, :create]
+
   def create
     # Extract the data from the params hash.
     file = params[:file]
