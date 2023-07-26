@@ -1,29 +1,31 @@
-<h1>Generate stories using your favourite flashcard decks!</h1>
-<p>This website allows you to upload your language-learning flashcards and uses the ChatGPT API to generate a story using words you are currently learning. The aim is to give you the opportunity to encounter these words in a more realistic context to enable retention.</p>
-<p>You can also create an account if you wish to save the stories you have generated.</p>
-<div class="container requirement-steps-wrapper">
-      <div class="row">
-          <div class="col-md-4 col-sm-12 requirements-steps-outer">
-            <div class="requirements-steps requirement-step-one">
-              <h3>Step 1</h3>
-              <i class="fa-solid fa-gears fa-3x contact-icons"></i>
-              <p>Input your requirements.</p>
+<div class="home-wrapper">
+  <h1>Generate stories using your favourite flashcard decks!</h1>
+  <p>This website allows you to upload your language-learning flashcards and uses the ChatGPT API to generate a story using words you are currently learning. The aim is to give you the opportunity to encounter these words in a more realistic context to enable retention.</p>
+  <p>You can also create an account if you wish to save the stories you have generated.</p>
+  <div class="container requirement-steps-wrapper">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 requirements-steps-outer">
+              <div class="requirements-steps requirement-step-one">
+                <h3>Step 1</h3>
+                <i class="fa-solid fa-gears fa-3x contact-icons"></i>
+                <p>Input your requirements.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 requirements-steps-outer">
-            <div class="requirements-steps requirement-step-two">
-              <h3>Step 2</h3>
-              <i class="fa-solid fa-file-import fa-3x contact-icons"></i>
-              <p>Upload a flashcard deck of your choice.</p>
+            <div class="col-md-4 col-sm-12 requirements-steps-outer">
+              <div class="requirements-steps requirement-step-two">
+                <h3>Step 2</h3>
+                <i class="fa-solid fa-file-import fa-3x contact-icons"></i>
+                <p>Upload a flashcard deck of your choice.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 requirements-steps-outer">
-            <div class="requirements-steps requirement-step-three">
-              <h3>Step 3</h3>
-              <i class="fa-solid fa-book fa-3x contact-icons"></i>
-              <p>Get a story tailored to your learning goals!</p>
+            <div class="col-md-4 col-sm-12 requirements-steps-outer">
+              <div class="requirements-steps requirement-step-three">
+                <h3>Step 3</h3>
+                <i class="fa-solid fa-book fa-3x contact-icons"></i>
+                <p>Get a story tailored to your learning goals!</p>
+              </div>
             </div>
-          </div>
-      </div>
+        </div>
+  </div>
+  <%= link_to "Get started", new_story_path, class: "button-primary" %>
 </div>
-<%= link_to "Get started", new_story_path, class: "button-primary" %>
