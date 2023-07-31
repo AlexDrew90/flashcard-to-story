@@ -5,14 +5,22 @@
 }
 
 .requirements-steps-outer{
-  background-color: #ffffff;
-  border-radius: 50px;
-  margin: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .requirements-steps{
-  width: 100%;
+  height: 100%;
+  background-color: #FDF9FA;
+  border-radius: 15px;
   text-align: center;
-  color: #0A1045;
-  padding: 20px;
+  padding: 35px;
+  margin: 5px;
+}
+
+.home-cta{
+  margin: 10vh 10vw 10vh 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
