@@ -8,12 +8,12 @@
 
     <div class="form-group">
       <%= form.label :format, "File Format" %>
-      <%= form.select :format, ['XML', 'txt', 'Other format'], {}, { required: true } %>
+      <%= form.select :format, ['CSV', 'JSON', 'XML'], {}, { required: true } %>
     </div>
 
     <div class="form-group">
       <%= form.label :flashcard_type, "Flashcard App Type" %>
-      <%= form.select :flashcard_type, ['Pleco', 'Anki', 'Other App'], {}, { required: true } %>
+      <%= form.select :flashcard_type, ['Anki', 'Pleco'], {}, { required: true } %>
     </div>
 
     <div class="form-group">
